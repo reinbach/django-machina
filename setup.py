@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import codecs
+
+from distutils.config import PyPIRCCommand
 from os.path import abspath
 from os.path import dirname
 from os.path import join
@@ -8,6 +10,8 @@ from setuptools import find_packages
 from setuptools import setup
 
 import machina
+
+PyPIRCCommand.DEFAULT_REPOSITORY = 'https://pypi.therapoid.net/simple/'
 
 
 def read_relative_file(filename):
